@@ -1,0 +1,96 @@
+//====================================================================================================
+footer {
+}
+//====================================================================================================
+.footer {
+	// .footer__body
+	&__body {
+		padding: 0px 0px 80px 0px;
+	}
+
+	// .footer__row
+	&__row {
+		display: flex;
+	}
+
+	// .footer__colomn
+	&__colomn {
+	}
+
+	// .footer__logo-name
+	&__logo-name {
+	}
+
+	// .footer__logo-text
+	&__logo-text {
+	}
+
+	// .footer__title
+	&__title {
+	}
+
+	// .footer__about
+	&__about {
+	}
+
+	// .footer__network
+	&__network {
+	}
+
+	// .footer__subscibe
+	&__subscibe {
+	}
+
+	// .footer__network-text
+	&__network-text {
+	}
+
+	// .footer__apps
+	&__apps {
+	}
+
+	// .footer__reserved
+	&__reserved {
+		padding: 40px 0px 0px 0px;
+		text-align: center;
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		color: #5e6282;
+	}
+}
+
+.about {
+	// .about__list
+	&__list {
+	}
+
+	// .about__item
+	&__item {
+	}
+}
+
+.subscibe {
+	// .subscibe__facebook
+	&__facebook {
+	}
+
+	// .subscibe__inst
+	&__inst {
+	}
+
+	// .subscibe__twitter
+	&__twitter {
+	}
+}
+
+.apps {
+	// .apps__gplay
+	&__gplay {
+	}
+
+	// .apps__astore
+	&__astore {
+	}
+}

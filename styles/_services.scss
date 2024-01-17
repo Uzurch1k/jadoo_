@@ -1,0 +1,114 @@
+//====================================================================================================
+.services {
+}
+.services {
+	// .services__body
+	&__body {
+		padding: 105px 0px 155px 0px;
+	}
+
+	// .services__row
+	&__row {
+	}
+
+	// .services__colomn
+	&__colomn {
+	}
+
+	// .services__subtitle
+	&__subtitle {
+	}
+
+	// .services__title
+	&__title {
+	}
+
+	// .services__categories
+	&__categories {
+	}
+}
+
+.categories {
+	// .categories__row
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		padding: 70px 0px 0px 0px;
+	}
+
+	// .categories__colomn
+	&__colomn {
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		height: 314px;
+		width: 267px;
+		border-radius: 36px;
+		transition: all 0.5s ease 0s;
+		background-color: #fff;
+		
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background: #df6951;
+			border-radius: 30px 0px 10px;
+			bottom: 0;
+			left: 0;
+			transition: all 0.8s ease 0s;
+			opacity: 0;
+			transform: scale(1);
+			z-index: -1;
+		}
+		&:hover:before {
+			transform: translate(-20px, 20px);
+			opacity: 1;
+		}
+		&:hover {
+			transition: all 0.8s ease 0s;
+			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+				0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
+				0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+		}
+	}
+
+	// .categories__photo
+	&__photo {
+		margin: auto;
+	}
+
+	&__body {
+		padding: 0px 0px 45px 0px;
+	}
+
+	// .categories__title
+	&__title {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		text-align: center;
+		color: #1e1d4c;
+		padding: 0px 0px 15px 0px;
+	}
+
+	// .categories__text
+	&__text {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		text-align: center;
+		line-height: 26 / 16 * 100%;
+		color: #5e6282;
+		padding: 0px 42px 0px 42px;
+	}
+}
+
+//====================================================================================================

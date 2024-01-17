@@ -1,0 +1,152 @@
+.travel {
+
+	// .travel__container
+	&__container {
+	}
+
+	// .travel__body
+	&__body {
+		padding: 110px 0px 115px 15px;
+	}
+
+	// .travel__row
+	&__row {
+		display: flex;
+
+	}
+
+	// .travel__colomn
+	&__colomn {
+		width: 625px;
+	}
+
+	// .travel__subtitle
+	&__subtitle {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #df6951;
+		padding: 0px 0px 25px 0px;
+	}
+
+	// .travel__title
+	&__title {
+		font-family: "Volkhov";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 84px;
+		line-height: 89 / 84 * 100%;
+		letter-spacing: -0.04em;
+		color: #181e4b;
+		padding: 0px 0px 30px 0px;
+		position: relative;
+		h1 {
+			position: relative;
+			z-index: 3;
+		}
+		.shadow-text {
+			position: absolute;
+			top: 70px;
+			right: 0;
+		}
+	}
+
+	// .travel__text
+	&__text {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 30 / 16 * 100%;
+		color: #5e6282;
+		width: 477px;
+		padding: 0px 0px 30px 0px;
+	}
+
+	// .travel__buttons
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	// .travel__buttons-more
+	&__buttons-more {
+		font-family: "Google Sans";   // А если изменится шрифт, будешь исправлять везде? 
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		color: #ffffff;
+		height: 60px;
+		padding: 0px 25px;
+		background: #f1a501;  //цвета тоже надо как переменные
+		box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+		border-radius: 10px;
+		margin: 0px 44px 0px 0px;
+
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid #fff;
+		transition: all 0.8s ease 0s;
+		&:hover {
+			transition: all 0.5s ease 0s;
+			background-color: #ff8000;
+			transform: translate(0, -2px);
+			box-shadow: 0 1.5px 2px rgba(13, 13, 13, 0.5);
+			border: 1px solid #fff;
+		}
+		&:active {
+			transition: all 0.3s ease 0s;
+			transform: translate(0, 2px);
+			background-color: #8c8c8c;
+			color: #212832;
+		}
+	}
+
+	// .travel__buttons-play
+	&__buttons-play {
+		border-radius: 50%;
+		background: #df6951;
+		box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+		width: 52px;
+		height: 52px;
+		position: relative;
+
+		border: 1px solid #fff;
+		transition: all 0.8s ease 0s;
+		&:hover {
+			transition: all 0.5s ease 0s;
+			background-color: #ff4d4d;
+			transform: translate(0, -2px);
+			box-shadow: 0 1.5px 2px rgba(13, 13, 13, 0.5);
+			border: 1px solid #fff;
+		}
+		&:active {
+			transition: all 0.3s ease 0s;
+			transform: translate(0, 2px);
+			background-color: #8c8c8c;
+			color: #212832;
+		}
+		img {
+			position: absolute;
+			top: 50%;
+			left: 53%;
+			z-index: 1;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	// .travel__play-text
+	&__play-text {
+		font-family: "Poppins";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 17px;
+		color: #686d77;
+		padding: 0px 0px 0px 20px;
+	}
+}
