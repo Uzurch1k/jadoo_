@@ -1,0 +1,146 @@
+/*----------------------------Null----------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------------------------Variables----------------------------*/
+:root {
+  --color-text: ;
+}
+
+/*----------------------------Other----------------------------*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  background-color: #121212;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/*---------------------------- Adaptive desktop (1280px)----------------------------*/
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+/*----------------------------General class----------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.title {
+}
+.subtitle {
+}
+.text {
+}
+
+.btn {
+}
+
+/*---------------------------- Header ----------------------------*/
+
+/*---------------------------- Section 1 Hero ----------------------------*/
+
+/*---------------------------- Section 2 ----------------------------*/
+
+/*---------------------------- Section 3 ----------------------------*/
+
+/*---------------------------- Section 4 ----------------------------*/
+
+/*---------------------------- Section 5 ----------------------------*/
+
+/*---------------------------- Footer ----------------------------*/
