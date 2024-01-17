@@ -1,0 +1,830 @@
+/*----------------------------Null----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "Google Sans";
+  src: url(/src/fonts/GoogleSans-Medium.woff), url(/src/fonts/GoogleSans-Medium.woff2);
+  font-weight: 500;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: "Google Sans", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/*----------------------------Variables----------------------------*/
+:root {
+  --color-text: ;
+}
+
+/*----------------------------Other----------------------------*/
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+/*---------------------------- Adaptive desktop (1280px)----------------------------*/
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+/*----------------------------General class----------------------------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #5e6282;
+}
+
+.title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #14183e;
+  padding: 10px 0px 0px 0px;
+}
+
+/*
+.icon-menu {
+	@media (max-width: 766.98px) {
+		display: block;
+		position: absolute;
+		top: 24px;
+		right: 10px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span {
+			transition: all 0.3s ease 0s;
+			top: calc(50% - 1px);
+			left: 0px;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			background-color: #fff;
+			&:first-child {
+				top: 0px;
+			}
+			&:last-child {
+				top: auto;
+				bottom: 0px;
+			}
+		}
+		&.active {
+			span {
+				transform: scale(0);
+				&:first-child {
+					transform: rotate(-45deg);
+					top: calc(50% - 1px);
+				}
+				&:last-child {
+					transform: rotate(45deg);
+					bottom: calc(50% - 1px);
+				}
+			}
+		}
+	}
+}
+*/
+.header {
+  position: relative;
+  z-index: 10;
+}
+.header__menu {
+  height: 80px;
+  padding: 30px 0px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  flex: 1 0 auto;
+}
+
+.menu__body {
+  display: flex;
+  align-items: center;
+  padding: 0px 0px 0px 30px;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 457px;
+}
+.menu__link {
+  text-decoration: none;
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #212832;
+  transition: all 1s ease 0s;
+}
+.menu__link:hover {
+  color: #df6951;
+  transition: all 0.3s ease 0s;
+}
+.menu__list-login {
+  display: flex;
+  width: 369px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu__link-login {
+  text-decoration: none;
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #212832;
+  transition: all 1s ease 0s;
+}
+.menu__link-login:hover {
+  color: #df6951;
+  transition: all 0.3s ease 0s;
+}
+
+.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0px 20px 0px 20px;
+  border: 1px solid #212832;
+  margin: 0px 40px 0px 50px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.8s ease 0s;
+  color: #212832;
+  text-decoration: none;
+}
+.btn:hover {
+  transition: all 0.5s ease 0s;
+  color: #fff;
+  background-color: #262626;
+  transform: translate(0, -2px);
+  box-shadow: 0 1.5px 2px rgba(13, 13, 13, 0.5);
+  border: 1px solid #fff;
+  text-decoration: none;
+}
+.btn:active {
+  transition: all 0.3s ease 0s;
+  transform: translate(0, 2px);
+  background-color: #8c8c8c;
+  color: #212832;
+}
+
+.vector {
+  position: relative;
+  width: 40px;
+}
+.vector::after {
+  content: " ";
+  background: url(/public/img/header/Vector.svg) 0 0/cover no-repeat;
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  z-index: 11;
+  left: 70%;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.travel__body {
+  padding: 110px 0px 115px 15px;
+}
+.travel__row {
+  display: flex;
+}
+.travel__colomn {
+  width: 625px;
+}
+.travel__subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #df6951;
+  padding: 0px 0px 25px 0px;
+}
+.travel__title {
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 105.9523809524%;
+  letter-spacing: -0.04em;
+  color: #181e4b;
+  padding: 0px 0px 30px 0px;
+  position: relative;
+}
+.travel__title h1 {
+  position: relative;
+  z-index: 3;
+}
+.travel__title .shadow-text {
+  position: absolute;
+  top: 70px;
+  right: 0;
+}
+.travel__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 187.5%;
+  color: #5e6282;
+  width: 477px;
+  padding: 0px 0px 30px 0px;
+}
+.travel__buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.travel__buttons-more {
+  font-family: "Google Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  height: 60px;
+  padding: 0px 25px;
+  background: #f1a501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 10px;
+  margin: 0px 44px 0px 0px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  transition: all 0.8s ease 0s;
+}
+.travel__buttons-more:hover {
+  transition: all 0.5s ease 0s;
+  background-color: #ff8000;
+  transform: translate(0, -2px);
+  box-shadow: 0 1.5px 2px rgba(13, 13, 13, 0.5);
+  border: 1px solid #fff;
+}
+.travel__buttons-more:active {
+  transition: all 0.3s ease 0s;
+  transform: translate(0, 2px);
+  background-color: #8c8c8c;
+  color: #212832;
+}
+.travel__buttons-play {
+  border-radius: 50%;
+  background: #df6951;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  width: 52px;
+  height: 52px;
+  position: relative;
+  border: 1px solid #fff;
+  transition: all 0.8s ease 0s;
+}
+.travel__buttons-play:hover {
+  transition: all 0.5s ease 0s;
+  background-color: #ff4d4d;
+  transform: translate(0, -2px);
+  box-shadow: 0 1.5px 2px rgba(13, 13, 13, 0.5);
+  border: 1px solid #fff;
+}
+.travel__buttons-play:active {
+  transition: all 0.3s ease 0s;
+  transform: translate(0, 2px);
+  background-color: #8c8c8c;
+  color: #212832;
+}
+.travel__buttons-play img {
+  position: absolute;
+  top: 50%;
+  left: 53%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.travel__play-text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #686d77;
+  padding: 0px 0px 0px 20px;
+}
+
+.services__body {
+  padding: 105px 0px 155px 0px;
+}
+.categories__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0px 0px 0px;
+}
+.categories__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 314px;
+  width: 267px;
+  border-radius: 36px;
+  transition: all 0.5s ease 0s;
+  background-color: #fff;
+}
+.categories__item::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #df6951;
+  border-radius: 30px 0px 10px;
+  bottom: 0;
+  left: 0;
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+  transform: scale(1);
+  z-index: -1;
+}
+.categories__item:hover:before {
+  transform: translate(-20px, 20px);
+  opacity: 1;
+}
+.categories__item:hover {
+  transition: all 0.8s ease 0s;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.categories__photo {
+  margin: auto;
+}
+.categories__body {
+  padding: 0px 0px 45px 0px;
+}
+.categories__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  color: #1e1d4c;
+  padding: 0px 0px 15px 0px;
+}
+.categories__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 162.5%;
+  color: #5e6282;
+  padding: 0px 42px 0px 42px;
+}
+
+.destinations__body {
+  padding: 0px 0px 185px 0px;
+}
+.destinations__top-selling {
+  padding: 60px 0px 0px 0px;
+}
+
+.top-selling__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px -17.5px;
+}
+.top-selling__items {
+  padding: 0px 17.5px;
+}
+.top-selling__colomn {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-radius: 24px;
+  width: 315px;
+  height: 457px;
+  overflow: hidden;
+  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  transition: all 0.5s ease 0s;
+}
+.top-selling__body {
+  border-top: 3px solid #b4b4cb;
+  border-bottom: 3px solid #b4b4cb;
+  width: 309px;
+  height: 130px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.8s ease 0s;
+  transform: translate(0px, 100px);
+}
+.top-selling__body div {
+  transition: all 0.8s ease 0s;
+  opacity: 0;
+}
+.top-selling__body:hover {
+  border-top: 3px solid #3e3e5b;
+  border-bottom: 3px solid #3e3e5b;
+  width: 309px;
+  transform: translate(0px, 0px);
+  transition: all 0.5s ease 0s;
+  border-radius: 24px;
+}
+.top-selling__body:hover div {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+}
+.top-selling__title {
+  display: flex;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #5e6282;
+  padding: 27px 25px 0px 20px;
+  justify-content: space-between;
+}
+.top-selling__subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #5e6282;
+  padding: 20px 0px 0px 55px;
+}
+
+.pointer {
+  position: relative;
+}
+.pointer::before {
+  content: " ";
+  background: url(/public/img/destinations/pointer.svg) 0 0/cover no-repeat;
+  width: 16.25px;
+  height: 16.25px;
+  position: absolute;
+  left: 23px;
+  top: 19px;
+}
+
+.photo-img1 {
+  background: url("/public/img/destinations/Rome.jpg") center/cover no-repeat;
+  position: relative;
+  z-index: 4;
+}
+.photo-img1:active {
+  transform: scale(1.4);
+  transition: all 0.5s ease 0s;
+  z-index: 5;
+}
+.photo-img1:active div {
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.photo-img2 {
+  background: url("/public/img/destinations/London.jpg") center/cover no-repeat;
+  position: relative;
+  z-index: 4;
+}
+.photo-img2:active {
+  transform: scale(1.4);
+  transition: all 0.5s ease 0s;
+  z-index: 5;
+}
+.photo-img2:active div {
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.photo-img3 {
+  background: url("/public/img/destinations/Paris.jpg") center/cover no-repeat;
+  position: relative;
+  z-index: 4;
+}
+.photo-img3:active {
+  transform: scale(1.4);
+  transition: all 0.5s ease 0s;
+  z-index: 5;
+}
+.photo-img3:active div {
+  opacity: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.nextTrip__body {
+  padding: 0px 0px 200px 55px;
+}
+.nextTrip__subtitle {
+  text-align: start;
+}
+.nextTrip__title {
+  text-align: start;
+  width: 510px;
+}
+.info__row {
+  padding: 30px 0px 0px 0px;
+}
+.info__items :last-child {
+  padding-bottom: 0;
+}
+.info__colomn {
+  display: flex;
+  padding: 0px 0px 40px 0px;
+  width: 395px;
+}
+.info__img1 {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  position: relative;
+  box-shadow: 0px 0px 5px rgb(240, 190, 40);
+  background-image: radial-gradient(circle at 0% 0%, #ffff6d 0, #ffff5e 10%, #ffff53 20%, #ffeb49 30%, #ffd142 40%, #f2b53c 50%, #df9a38 60%, #ce8335 70%, #be7033 80%, #b16033 90%, #a55334 100%);
+  background-size: 200% 200%;
+  animation: info__img1 4s ease infinite;
+}
+@keyframes info__img1 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.info__img1 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info__img2 {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  position: relative;
+  box-shadow: 0px 0px 5px rgb(204, 0, 0);
+  background-image: radial-gradient(circle at 0% 0%, #ffbb00 0, #ffac00 8.33%, #ff9900 16.67%, #ff8518 25%, #ff6e2b 33.33%, #ff5636 41.67%, #f23c3c 50%, #da2040 58.33%, #c50043 66.67%, #b20046 75%, #a1004a 83.33%, #92004f 91.67%, #850055 100%);
+  background-size: 200% 200%;
+  animation: info__img2 4s ease infinite;
+}
+@keyframes info__img2 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.info__img2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info__img3 {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 13px;
+  position: relative;
+  box-shadow: 0px 0px 5px rgb(0, 99, 128);
+  background-image: radial-gradient(circle at -4.17% 4.55%, #00ffff 0, #00f7ff 25%, #3cb5f2 50%, #3e789f 75%, #304558 100%);
+  background-size: 200% 200%;
+  animation: info__img3 4s ease infinite;
+}
+@keyframes info__img3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.info__img3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info__body {
+  padding: 0px 0px 0px 20px;
+}
+.info__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+  padding: 0px 0px 5px 0px;
+}
+.info__text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124.5%;
+  color: #5e6282;
+}
+
+.aboutUs__container {
+  margin-bottom: 100px;
+}
+.aboutUs__row {
+  display: flex;
+  align-items: flex-start;
+}
+.aboutUs__col {
+  display: flex;
+  align-items: flex-end;
+}
+.aboutUs__testimonials {
+  margin-right: 87px;
+}
+.aboutUs__cards {
+  display: block;
+  z-index: 2;
+  position: absolute;
+  border: 2px solid #f7f7f7;
+  border-radius: 10px;
+}
+.aboutUs__cards_active {
+  z-index: 7;
+  position: relative;
+  margin-top: 40px;
+  border: 2px solid #f7f7f7;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.2);
+}
+.aboutUs .testimonials__body {
+  width: 450px;
+}
+.aboutUs .testimonials__title {
+  font-weight: 600;
+  font-size: 18px;
+}
+.aboutUs .testimonials__subtitle {
+  text-transform: capitalize;
+  font-family: "Volkhov";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64px;
+}
+.aboutUs .cards {
+  position: relative;
+}
+.aboutUs .cards__body {
+  width: 504px;
+  height: 245px;
+  padding: 38px;
+  background-color: white;
+  font-family: "Poppins";
+}
+.aboutUs .cards__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  margin-bottom: 34px;
+}
+.aboutUs .cards__subtitile {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+.aboutUs .cards__avatar {
+  position: absolute;
+  left: -34px;
+  top: -37px;
+}
+.aboutUs .cards__name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+}
+.aboutUs .cards__buttons {
+  flex-direction: column;
+  margin-left: 66px;
+  margin-top: 140px;
+}
+
+.footer__body {
+  padding: 0px 0px 80px 0px;
+}
+.footer__row {
+  display: flex;
+}
+.footer__reserved {
+  padding: 40px 0px 0px 0px;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #5e6282;
+}
