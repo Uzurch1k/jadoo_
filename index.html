@@ -6,6 +6,13 @@
     <meta name="description" content="Jadoo" />
     <title>Jadoo</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600;700&family=Volkhov:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -19,15 +26,10 @@
 
   <body>
     <header class="header">
-      <div class="header__container">
+      <div class="header__container container">
         <div class="header__menu menu">
-          <!-- <button type="button" class="menu__icon icon-menu">
-					<span></span>
-					<span></span>
-					<span></span>
-					</button> -->
           <div class="header__logo">
-            <img src="./img/header/Logo.svg" alt="" />
+            <a href="#"><img src="./img/header/Logo.svg" alt="" /></a>
           </div>
           <nav class="menu__body">
             <ul class="menu__list">
@@ -61,47 +63,49 @@
       </div>
     </header>
 
-    <main>
-      <section class="page">
-        <div class="travel__container">
-          <div class="travel__body">
-            <div class="travel__row">
-              <div class="travel__colomn">
-                <h2 class="travel__subtitle">
-                  Best Destinations around the world
-                </h2>
-                <div class="travel__title">
-                  <h1>
-                    Travel, enjoy <br />
-                    and live a new <br />
-                    and full life
-                  </h1>
-                  <img
-                    class="shadow-text"
-                    src="./img/main/shadowEnjoy.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="travel__text">
-                  Built Wicket longer admire do barton vanity itself do in it.
-                  Preferred to sportsmen it engrossed listening. Park gate sell
-                  they west hard for the.
-                </div>
-                <div class="travel__buttons">
-                  <button class="travel__buttons-more">Find out more</button>
-                  <button class="travel__buttons-play">
-                    <img src="./img/main/play.svg" alt="" />
-                  </button>
-                  <div class="travel__play-text">Play Demo</div>
-                </div>
+    <section class="travel">
+      <div class="travel__container container">
+        <div class="travel__body">
+          <div class="travel__row">
+            <div class="travel__colomn">
+              <h2 class="travel__subtitle">
+                Best Destinations around the world
+              </h2>
+              <div class="travel__title">
+                <h1>
+                  Travel, enjoy <br />
+                  and live a new <br />
+                  and full life
+                </h1>
+                <img
+                  class="shadow-text"
+                  src="./img/main/shadowEnjoy.svg"
+                  alt=""
+                />
+              </div>
+              <div class="travel__text">
+                Built Wicket longer admire do barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening. Park gate sell
+                they west hard for the.
+              </div>
+              <div class="travel__buttons">
+                <button class="travel__buttons-more">Find out more</button>
+                <button class="travel__buttons-play">
+                  <img src="./img/main/play.svg" alt="" />
+                </button>
+                <div class="travel__play-text">Play Demo</div>
               </div>
             </div>
           </div>
+          <img class="travel-girl" src="./img/main/travelGirl.png" alt="" />
         </div>
-      </section>
+      </div>
+      <img class="shadow-girl" src="./img/main/shadowGirl.png" alt="" />
+    </section>
 
+    <main>
       <section class="services">
-        <div class="services__container">
+        <div class="services__container container">
           <div class="services__body">
             <div class="services__row">
               <div class="services__colomn">
@@ -172,12 +176,13 @@
                 </div>
               </div>
             </div>
+            <img class="bg-plus" src="./img/services/bgPlus.svg" alt="" />
           </div>
         </div>
       </section>
 
       <section class="destinations">
-        <div class="destinations__container">
+        <div class="destinations__container container">
           <div class="destinations__body">
             <div class="destinations__row">
               <div class="destinations__colomn">
@@ -227,6 +232,12 @@
                         </div>
                       </div>
                     </div>
+
+                    <img
+                      class="spring"
+                      src="./img/destinations/spring.svg"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -236,7 +247,7 @@
       </section>
 
       <section class="nextTrip">
-        <div class="nextTrip__container">
+        <div class="nextTrip__container container">
           <div class="nextTrip__body">
             <div class="nextTrip__row">
               <div class="nextTrip__colomn">
@@ -301,7 +312,7 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="footer__container container">
         <div class="footer__body">
           <div class="footer__row">
             <div class="footer__colomn">

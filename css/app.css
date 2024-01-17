@@ -66,7 +66,7 @@ img {
 
 @font-face {
   font-family: "Google Sans";
-  src: url(/src/fonts/GoogleSans-Medium.woff), url(/src/fonts/GoogleSans-Medium.woff2);
+  src: url(/fonts/GoogleSans-Medium.woff), url(/fonts/GoogleSans-Medium.woff2);
   font-weight: 500;
   font-style: normal;
 }
@@ -77,17 +77,9 @@ html {
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-family: "Google Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: #fff;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 /*----------------------------Variables----------------------------*/
@@ -140,56 +132,13 @@ body {
   padding: 10px 0px 0px 0px;
 }
 
-/*
-.icon-menu {
-	@media (max-width: 766.98px) {
-		display: block;
-		position: absolute;
-		top: 24px;
-		right: 10px;
-		width: 30px;
-		height: 18px;
-		cursor: pointer;
-		z-index: 5;
-		span {
-			transition: all 0.3s ease 0s;
-			top: calc(50% - 1px);
-			left: 0px;
-			position: absolute;
-			width: 100%;
-			height: 2px;
-			background-color: #fff;
-			&:first-child {
-				top: 0px;
-			}
-			&:last-child {
-				top: auto;
-				bottom: 0px;
-			}
-		}
-		&.active {
-			span {
-				transform: scale(0);
-				&:first-child {
-					transform: rotate(-45deg);
-					top: calc(50% - 1px);
-				}
-				&:last-child {
-					transform: rotate(45deg);
-					bottom: calc(50% - 1px);
-				}
-			}
-		}
-	}
-}
-*/
 .header {
   position: relative;
   z-index: 10;
 }
 .header__menu {
   height: 80px;
-  padding: 30px 0px 0px 0px;
+  padding: 44px 0px 0px 0px;
   display: flex;
   align-items: center;
 }
@@ -278,7 +227,7 @@ body {
 }
 .vector::after {
   content: " ";
-  background: url(/public/img/header/Vector.svg) 0 0/cover no-repeat;
+  background: url("/img/header/Vector.svg") 0 0/cover no-repeat;
   width: 9px;
   height: 5px;
   position: absolute;
@@ -289,7 +238,14 @@ body {
 }
 
 .travel__body {
-  padding: 110px 0px 115px 15px;
+  padding: 110px 0px 115px 0px;
+  position: relative;
+}
+.travel__body .travel-girl {
+  position: absolute;
+  top: 12px;
+  right: -40px;
+  z-index: 1;
 }
 .travel__row {
   display: flex;
@@ -299,25 +255,22 @@ body {
 }
 .travel__subtitle {
   font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
   font-size: 20px;
   text-transform: uppercase;
   color: #df6951;
   padding: 0px 0px 25px 0px;
 }
 .travel__title {
-  font-family: "Volkhov";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 84px;
-  line-height: 105.9523809524%;
-  letter-spacing: -0.04em;
-  color: #181e4b;
   padding: 0px 0px 30px 0px;
   position: relative;
 }
 .travel__title h1 {
+  color: #181e4b;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Volkhov;
+  font-size: 84px;
+  line-height: 1.05;
+  letter-spacing: -3.36px;
   position: relative;
   z-index: 3;
 }
@@ -325,6 +278,7 @@ body {
   position: absolute;
   top: 70px;
   right: 0;
+  z-index: 2;
 }
 .travel__text {
   font-family: "Poppins";
@@ -412,8 +366,24 @@ body {
   padding: 0px 0px 0px 20px;
 }
 
-.services__body {
+.shadow-girl {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.services {
   padding: 105px 0px 155px 0px;
+}
+.services__body {
+  position: relative;
+}
+.services__body .bg-plus {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(50%);
 }
 .categories__row {
   display: flex;
@@ -429,7 +399,7 @@ body {
   height: 314px;
   width: 267px;
   border-radius: 36px;
-  transition: all 0.5s ease 0s;
+  transition: box-shadow 700ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #fff;
 }
 .categories__item::before {
@@ -441,9 +411,8 @@ body {
   border-radius: 30px 0px 10px;
   bottom: 0;
   left: 0;
-  transition: all 0.8s ease 0s;
+  transition: transform 700ms cubic-bezier(0.4, 0, 0.2, 1), opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
-  transform: scale(1);
   z-index: -1;
 }
 .categories__item:hover:before {
@@ -451,8 +420,7 @@ body {
   opacity: 1;
 }
 .categories__item:hover {
-  transition: all 0.8s ease 0s;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 }
 .categories__photo {
   margin: auto;
@@ -487,6 +455,14 @@ body {
   padding: 60px 0px 0px 0px;
 }
 
+.top-selling__container {
+  position: relative;
+}
+.top-selling__container .spring {
+  position: absolute;
+  right: 15px;
+  top: 150px;
+}
 .top-selling__row {
   display: flex;
   justify-content: center;
@@ -504,7 +480,7 @@ body {
   width: 315px;
   height: 457px;
   overflow: hidden;
-  filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
   transition: all 0.5s ease 0s;
 }
 .top-selling__body {
@@ -521,7 +497,7 @@ body {
   transition: all 0.8s ease 0s;
   opacity: 0;
 }
-.top-selling__body:hover {
+.top-selling__colomn:hover .top-selling__body {
   border-top: 3px solid #3e3e5b;
   border-bottom: 3px solid #3e3e5b;
   width: 309px;
@@ -529,7 +505,7 @@ body {
   transition: all 0.5s ease 0s;
   border-radius: 24px;
 }
-.top-selling__body:hover div {
+.top-selling__colomn:hover .top-selling__body div {
   opacity: 1;
   transition: all 0.5s ease 0s;
 }
@@ -557,7 +533,7 @@ body {
 }
 .pointer::before {
   content: " ";
-  background: url(/public/img/destinations/pointer.svg) 0 0/cover no-repeat;
+  background: url("/img/destinations/pointer.svg") 0 0/cover no-repeat;
   width: 16.25px;
   height: 16.25px;
   position: absolute;
@@ -566,7 +542,7 @@ body {
 }
 
 .photo-img1 {
-  background: url("/public/img/destinations/Rome.jpg") center/cover no-repeat;
+  background: url("/img/destinations/Rome.jpg") center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
@@ -581,7 +557,7 @@ body {
 }
 
 .photo-img2 {
-  background: url("/public/img/destinations/London.jpg") center/cover no-repeat;
+  background: url("/img/destinations/London.jpg") center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
@@ -596,7 +572,7 @@ body {
 }
 
 .photo-img3 {
-  background: url("/public/img/destinations/Paris.jpg") center/cover no-repeat;
+  background: url("/img/destinations/Paris.jpg") center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
