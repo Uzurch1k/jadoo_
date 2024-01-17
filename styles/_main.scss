@@ -1,8 +1,14 @@
 //====================================================================================================
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	height: 100%;
-	color: $mainColor;
-	background-color: burlywood;
+	min-height: 100vh;
+	scroll-behavior: smooth;
+	font-family: "Google Sans", sans-serif;
+	font-size: 16px;
+	background-color: #fff;
 }
 
 .wrapper {
@@ -12,22 +18,51 @@ body {
 	display: flex;
 	flex-direction: column;
 }
-//====================================================================================================
 
-.container {
-	max-width: $maxWidthContainer;
-	margin: 0 auto;
-	padding: 0 15px;
-	@media (max-width: $md1) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3) {
-		max-width: none;
-		padding: 0 10px;
-	}
+/*----------------------------Variables----------------------------*/
+:root {
+	--color-text: ;
 }
-.page {
+
+/*----------------------------Other----------------------------*/
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/*---------------------------- Adaptive tablet ----------------------------*/
+// @media screen and (min-width: 768px) {
+// 	.container {
+// 		max-width: 768px;
+// 	}
+// }
+
+/*---------------------------- Adaptive desktop (1280px)----------------------------*/
+// @media screen and (min-width: 1280px) {
+// 	.container {
+// 		max-width: 1280px;
+// 	}
+// }
+
+/*---------------------------- Adaptive desktop (1440px)----------------------------*/
+// @media screen and (min-width: 1440px) {
+// 	.container {
+// 		max-width: 1440px;
+// 	}
+// }
+
+/*----------------------------General class----------------------------*/
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
