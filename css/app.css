@@ -227,7 +227,7 @@ body {
 }
 .vector::after {
   content: " ";
-  background: url("/img/header/Vector.svg") 0 0/cover no-repeat;
+  background: url(/img/header/Vector.svg) 0 0/cover no-repeat;
   width: 9px;
   height: 5px;
   position: absolute;
@@ -533,7 +533,7 @@ body {
 }
 .pointer::before {
   content: " ";
-  background: url("/img/destinations/pointer.svg") 0 0/cover no-repeat;
+  background: url(/img/destinations/pointer.svg) 0 0/cover no-repeat;
   width: 16.25px;
   height: 16.25px;
   position: absolute;
@@ -542,7 +542,7 @@ body {
 }
 
 .photo-img1 {
-  background: url("/img/destinations/Rome.jpg") center/cover no-repeat;
+  background: url(/img/destinations/Rome.jpg) center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
@@ -557,7 +557,7 @@ body {
 }
 
 .photo-img2 {
-  background: url("/img/destinations/London.jpg") center/cover no-repeat;
+  background: url(/img/destinations/London.jpg) center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
@@ -572,7 +572,7 @@ body {
 }
 
 .photo-img3 {
-  background: url("/img/destinations/Paris.jpg") center/cover no-repeat;
+  background: url(/img/destinations/Paris.jpg) center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
