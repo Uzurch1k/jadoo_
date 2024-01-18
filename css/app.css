@@ -568,7 +568,7 @@ body {
 }
 
 .photo-img3 {
-  background: url(img/destinations/paris-1.jpg) center/cover no-repeat;
+  background: url(./img/destinations/paris-1.jpg) center/cover no-repeat;
   position: relative;
   z-index: 4;
 }
