@@ -1,8 +1,4 @@
 /*----------------------------Null----------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Volkhov:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -66,7 +62,7 @@ img {
 
 @font-face {
   font-family: "Google Sans";
-  src: url(/fonts/googleSans-medium.ttf), url(/fonts/googleSans-medium.woff2);
+  src: url("/fonts/GoogleSans-Medium.woff2") format("woff2"), url("/fonts/GoogleSans-Medium.woff") format("woff"), url("/fonts/GoogleSans-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
