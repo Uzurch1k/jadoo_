@@ -11,6 +11,7 @@
 		margin-bottom: 60px;
 	}
 }
+
 .top-selling {
 	&__container {
 		position: relative;
@@ -98,23 +99,31 @@
 		justify-content: space-between;
 	}
 	&__subtitle {
+		position: relative;
 		font-family: "Poppins";
 		font-style: normal;
 		font-weight: 500;
 		font-size: 16px;
 		color: #5e6282;
 		padding: 20px 0px 0px 55px;
+		img {
+			position: absolute;
+			left: 21px;
+			width: 20px;
+			height: 20px;
+		}
 	}
 }
-.pointer {
-	position: relative;
-	&::before {
-		content: " ";
-		background: url(/img/destinations/send.svg) 0 0 / cover no-repeat;
-		width: 16.25px;
-		height: 16.25px;
-		position: absolute;
-		left: 23px;
-		top: 19px;
-	}
-}
+
+// .pointer {
+// 	position: relative;
+// 	&::before {
+// 		content: " ";
+// 		background: url(/img/destinations/send.svg) 0 0 / cover no-repeat;
+// 		width: 16.25px;
+// 		height: 16.25px;
+// 		position: absolute;
+// 		left: 23px;
+// 		top: 19px;
+// 	}
+// }

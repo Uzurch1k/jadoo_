@@ -535,6 +535,7 @@ body {
   justify-content: space-between;
 }
 .top-selling__subtitle {
+  position: relative;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
@@ -542,18 +543,11 @@ body {
   color: #5e6282;
   padding: 20px 0px 0px 55px;
 }
-
-.pointer {
-  position: relative;
-}
-.pointer::before {
-  content: " ";
-  background: url(/img/destinations/send.svg) 0 0/cover no-repeat;
-  width: 16.25px;
-  height: 16.25px;
+.top-selling__subtitle img {
   position: absolute;
-  left: 23px;
-  top: 19px;
+  left: 21px;
+  width: 20px;
+  height: 20px;
 }
 
 .nextTrip {
