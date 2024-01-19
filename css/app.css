@@ -76,6 +76,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 /*----------------------------Variables----------------------------*/
@@ -125,16 +126,15 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #14183e;
-  padding: 10px 0px 0px 0px;
 }
 
 .header {
   position: relative;
   z-index: 10;
+  padding-top: 45px;
+  padding-bottom: 125px;
 }
 .header__menu {
-  height: 80px;
-  padding: 44px 0px 0px 0px;
   display: flex;
   align-items: center;
 }
@@ -233,13 +233,15 @@ body {
   transform: translate(0, -50%);
 }
 
+.travel {
+  padding-bottom: 222px;
+}
 .travel__body {
-  padding: 110px 0px 115px 0px;
   position: relative;
 }
 .travel__body .travel-girl {
   position: absolute;
-  top: 12px;
+  top: -112px;
   right: -40px;
   z-index: 1;
 }
@@ -370,7 +372,13 @@ body {
 }
 
 .services {
-  padding: 105px 0px 155px 0px;
+  padding: 0px 0px 155px 0px;
+}
+.services__subtitle {
+  margin-bottom: 10px;
+}
+.services__title {
+  margin-bottom: 68px;
 }
 .services__body {
   position: relative;
@@ -384,7 +392,6 @@ body {
 .categories__row {
   display: flex;
   justify-content: space-between;
-  padding: 70px 0px 0px 0px;
 }
 .categories__item {
   position: relative;
@@ -447,8 +454,11 @@ body {
 .destinations__body {
   padding: 0px 0px 185px 0px;
 }
-.destinations__top-selling {
-  padding: 60px 0px 0px 0px;
+.destinations__subtitle {
+  margin-bottom: 8px;
+}
+.destinations__title {
+  margin-bottom: 60px;
 }
 
 .top-selling__container {
@@ -582,19 +592,47 @@ body {
   transition: all 0.5s ease 0s;
 }
 
+.nextTrip {
+  padding-bottom: 200px;
+}
 .nextTrip__body {
-  padding: 0px 0px 200px 55px;
+  padding-left: 55px;
+}
+.nextTrip__colomn {
+  display: flex;
 }
 .nextTrip__subtitle {
   text-align: start;
+  margin-bottom: 15px;
 }
 .nextTrip__title {
   text-align: start;
   width: 510px;
+  margin-bottom: 30px;
 }
-.info__row {
-  padding: 30px 0px 0px 0px;
+.nextTrip__cutaway {
+  margin-top: 78px;
+  margin-left: 115px;
+  width: 370px;
+  height: 400px;
+  border-radius: 26px;
+  background-color: #fff;
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  position: relative;
 }
+.nextTrip__cutaway-bg {
+  width: 354px;
+  height: 367px;
+  border-radius: 367px;
+  opacity: 0.8;
+  background: #59b1e6;
+  filter: blur(75px);
+  position: absolute;
+  z-index: -1;
+  top: -60px;
+  right: -44px;
+}
+
 .info__items :last-child {
   padding-bottom: 0;
 }
@@ -785,18 +823,107 @@ body {
   margin-top: 140px;
 }
 
+.footer {
+  padding-bottom: 80px;
+}
 .footer__body {
-  padding: 0px 0px 80px 0px;
+  padding: 0 50px;
 }
 .footer__row {
   display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer__colomn {
+  margin-top: 20px;
+}
+.footer__logo-name {
+  color: #181e4b;
+  font-family: Poppins;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: normal;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer__logo-text {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.24;
+  max-width: 207px;
+}
+.footer__title {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.24;
+  margin-bottom: 32px;
+}
+.footer__network {
+  margin-top: 10px;
+}
+.footer__subscibe {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+  justify-content: start;
+}
+.footer__network-text {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.1px;
+  margin-bottom: 16px;
+}
+.footer__apps {
+  display: flex;
+  gap: 7px;
 }
 .footer__reserved {
-  padding: 40px 0px 0px 0px;
+  margin-top: 85px;
   text-align: center;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   color: #5e6282;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.about__item a {
+  color: #5e6282;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.24;
+  transition: all 1s ease 0s;
+}
+.about__item a:hover {
+  color: #df6951;
+  transition: all 0.3s ease 0s;
+}
+
+.apps__gplay {
+  width: 110px;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: #080809;
+}
+.apps__astore {
+  width: 110px;
+  height: 35px;
+  border-radius: 17.5px;
+  background-color: #080809;
 }

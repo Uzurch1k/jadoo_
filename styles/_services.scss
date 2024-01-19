@@ -1,7 +1,13 @@
 //====================================================================================================
 .services {
-	padding: 105px 0px 155px 0px;
+	padding: 0px 0px 155px 0px;
 
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+	&__title {
+		margin-bottom: 68px;
+	}
 	// .services__body
 	&__body {
 		position: relative;
@@ -40,7 +46,6 @@
 	&__row {
 		display: flex;
 		justify-content: space-between;
-		padding: 70px 0px 0px 0px;
 	}
 
 	// .categories__colomn

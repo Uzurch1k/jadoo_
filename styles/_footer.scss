@@ -1,32 +1,56 @@
 //====================================================================================================
-footer {
-}
-//====================================================================================================
 .footer {
+	padding-bottom: 80px;
 	// .footer__body
 	&__body {
-		padding: 0px 0px 80px 0px;
+		padding: 0 50px;
 	}
 
 	// .footer__row
 	&__row {
 		display: flex;
+		justify-content: space-between;
+		align-items: start;
+	}
+
+	&__colomn-logo {
 	}
 
 	// .footer__colomn
 	&__colomn {
+		margin-top: 20px;
 	}
 
 	// .footer__logo-name
 	&__logo-name {
+		color: #181e4b;
+		font-family: Poppins;
+		font-size: 44px;
+		font-weight: 500;
+		line-height: normal;
+		display: block;
+		margin-bottom: 20px;
 	}
 
 	// .footer__logo-text
 	&__logo-text {
+		color: #5e6282;
+		font-family: Poppins;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.24;
+		max-width: 207px;
 	}
 
 	// .footer__title
 	&__title {
+		color: #080809;
+		font-family: Poppins;
+		font-size: 21px;
+		font-weight: 700;
+		line-height: 1.24;
+		margin-bottom: 32px;
 	}
 
 	// .footer__about
@@ -35,23 +59,38 @@ footer {
 
 	// .footer__network
 	&__network {
+		margin-top: 10px;
 	}
 
 	// .footer__subscibe
 	&__subscibe {
+		display: flex;
+		gap: 25px;
+		margin-bottom: 30px;
+		margin-left: -10px;
+		justify-content: start;
 	}
 
 	// .footer__network-text
 	&__network-text {
+		color: #5e6282;
+		font-family: Poppins;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1.24;
+		letter-spacing: 0.1px;
+		margin-bottom: 16px;
 	}
 
 	// .footer__apps
 	&__apps {
+		display: flex;
+		gap: 7px;
 	}
 
 	// .footer__reserved
 	&__reserved {
-		padding: 40px 0px 0px 0px;
+		margin-top: 85px;
 		text-align: center;
 		font-family: "Poppins";
 		font-style: normal;
@@ -64,10 +103,26 @@ footer {
 .about {
 	// .about__list
 	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	// .about__item
 	&__item {
+		a {
+			color: #5e6282;
+			font-family: Poppins;
+			font-size: 18px;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.24;
+			transition: all 1s ease 0s;
+			&:hover {
+				color: #df6951;
+				transition: all 0.3s ease 0s;
+			}
+		}
 	}
 }
 
@@ -88,9 +143,21 @@ footer {
 .apps {
 	// .apps__gplay
 	&__gplay {
+		width: 110px;
+		height: 35px;
+		border-radius: 17.5px;
+		background-color: #080809;
+	}
+	&__gplay-img {
 	}
 
 	// .apps__astore
 	&__astore {
+		width: 110px;
+		height: 35px;
+		border-radius: 17.5px;
+		background-color: #080809;
+	}
+	&__astore-img {
 	}
 }

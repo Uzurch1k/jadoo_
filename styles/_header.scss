@@ -2,11 +2,12 @@
 .header {
 	position: relative;
 	z-index: 10;
+	padding-top: 45px;
+	padding-bottom: 125px;
+
 	&__container {
 	}
 	&__menu {
-		height: 80px;
-		padding: 44px 0px 0px 0px;
 		display: flex;
 		align-items: center;
 	}
