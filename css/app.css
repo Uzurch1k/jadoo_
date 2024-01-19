@@ -962,16 +962,3 @@ body {
   color: #df6951;
   transition: all 0.3s ease 0s;
 }
-
-.apps__gplay {
-  width: 110px;
-  height: 35px;
-  border-radius: 17.5px;
-  background-color: #080809;
-}
-.apps__astore {
-  width: 110px;
-  height: 35px;
-  border-radius: 17.5px;
-  background-color: #080809;
-}
