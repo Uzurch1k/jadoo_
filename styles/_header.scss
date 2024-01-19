@@ -95,20 +95,5 @@
 	}
 }
 
-.vector {
-	position: relative;
-	width: 40px;
-	&::after {
-		content: " ";
-		background: url(/img/header/vector.svg) 0 0 / cover no-repeat;
-		width: 9px;
-		height: 5px;
-		position: absolute;
-		z-index: 11;
-		left: 70%;
-		top: 50%;
-		transform: translate(0, -50%);
-	}
-}
 .icon-menu {
 }
