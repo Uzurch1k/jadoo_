@@ -19,6 +19,7 @@
 			position: absolute;
 			right: 15px;
 			top: 150px;
+			z-index: -1;
 		}
 	}
 	&__row {
@@ -46,6 +47,14 @@
 			0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02),
 			0px 100px 80px 0px rgba(0, 0, 0, 0.02);
 		transition: all 0.5s ease 0s;
+
+		position: relative;
+		img {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
 	}
 
 	&__body {
@@ -105,48 +114,5 @@
 		position: absolute;
 		left: 23px;
 		top: 19px;
-	}
-}
-
-.photo-img1 {
-	background: url(/img/destinations/rome-1.jpg) center / cover no-repeat;
-	position: relative;
-	z-index: 4;
-	&:active {
-		transform: scale(1.4);
-		transition: all 0.5s ease 0s;
-		z-index: 5;
-		div {
-			opacity: 0;
-			transition: all 0.5s ease 0s;
-		}
-	}
-}
-.photo-img2 {
-	background: url(/img/destinations/london-1.jpg) center / cover no-repeat;
-	position: relative;
-	z-index: 4;
-	&:active {
-		transform: scale(1.4);
-		transition: all 0.5s ease 0s;
-		z-index: 5;
-		div {
-			opacity: 0;
-			transition: all 0.5s ease 0s;
-		}
-	}
-}
-.photo-img3 {
-	background: url(/img/destinations/paris-1.jpg) center / cover no-repeat;
-	position: relative;
-	z-index: 4;
-	&:active {
-		transform: scale(1.4);
-		transition: all 0.5s ease 0s;
-		z-index: 5;
-		div {
-			opacity: 0;
-			transition: all 0.5s ease 0s;
-		}
 	}
 }

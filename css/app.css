@@ -155,7 +155,7 @@ body {
 }
 .menu__link {
   text-decoration: none;
-  font-family: "Google Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -174,7 +174,7 @@ body {
 }
 .menu__link-login {
   text-decoration: none;
-  font-family: "Google Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -294,7 +294,7 @@ body {
   align-items: center;
 }
 .travel__buttons-more {
-  font-family: "Google Sans";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -468,6 +468,7 @@ body {
   position: absolute;
   right: 15px;
   top: 150px;
+  z-index: -1;
 }
 .top-selling__row {
   display: flex;
@@ -488,6 +489,14 @@ body {
   overflow: hidden;
   box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
   transition: all 0.5s ease 0s;
+  position: relative;
+}
+.top-selling__colomn img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .top-selling__body {
   border-top: 3px solid #b4b4cb;
@@ -545,51 +554,6 @@ body {
   position: absolute;
   left: 23px;
   top: 19px;
-}
-
-.photo-img1 {
-  background: url(/img/destinations/rome-1.jpg) center/cover no-repeat;
-  position: relative;
-  z-index: 4;
-}
-.photo-img1:active {
-  transform: scale(1.4);
-  transition: all 0.5s ease 0s;
-  z-index: 5;
-}
-.photo-img1:active div {
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-
-.photo-img2 {
-  background: url(/img/destinations/london-1.jpg) center/cover no-repeat;
-  position: relative;
-  z-index: 4;
-}
-.photo-img2:active {
-  transform: scale(1.4);
-  transition: all 0.5s ease 0s;
-  z-index: 5;
-}
-.photo-img2:active div {
-  opacity: 0;
-  transition: all 0.5s ease 0s;
-}
-
-.photo-img3 {
-  background: url(/img/destinations/paris-1.jpg) center/cover no-repeat;
-  position: relative;
-  z-index: 4;
-}
-.photo-img3:active {
-  transform: scale(1.4);
-  transition: all 0.5s ease 0s;
-  z-index: 5;
-}
-.photo-img3:active div {
-  opacity: 0;
-  transition: all 0.5s ease 0s;
 }
 
 .nextTrip {
