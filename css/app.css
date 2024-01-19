@@ -619,6 +619,7 @@ body {
   background-color: #fff;
   box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
   position: relative;
+  padding: 20px 25px 0px 25px;
 }
 .nextTrip__cutaway-bg {
   width: 354px;
@@ -741,6 +742,111 @@ body {
   font-size: 16px;
   line-height: 124.5%;
   color: #5e6282;
+}
+
+.cutaway__img {
+  margin-bottom: 25px;
+}
+.cutaway__title {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: 0.27px;
+  margin-bottom: 13px;
+}
+.cutaway__text {
+  color: #84829a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.08px;
+  margin-bottom: 20px;
+}
+.cutaway__icon-wrap {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 30px;
+}
+.cutaway__icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cutaway__subtext {
+  color: #84829a;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.32px;
+}
+.cutaway__box {
+  position: absolute;
+  bottom: 35px;
+  right: -165px;
+  display: flex;
+  padding: 17px 17px 0px 17px;
+  width: 263px;
+  height: 129px;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0px 1.852px 3.148px 0px rgba(0, 0, 0, 0), 0px 8.148px 6.519px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.519px 25.481px 0px rgba(0, 0, 0, 0.01), 0px 64.815px 46.852px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+.cutaway__box-img {
+  width: 50px;
+  height: 50px;
+}
+.cutaway__conteiner {
+  margin-left: 10px;
+}
+.cutaway__box-text {
+  color: #84829a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.49px;
+  margin-bottom: 6px;
+}
+.cutaway__box-title {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.27px;
+  margin-bottom: 14px;
+}
+.cutaway__box-percent {
+  color: #080809;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.24;
+  letter-spacing: -0.77px;
+  margin-bottom: 10px;
+}
+.cutaway__box-percent span {
+  color: #8a79df;
+}
+.cutaway__box-progress {
+  width: 156px;
+  height: 5px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+.cutaway__progress {
+  height: 100%;
+  width: 40%;
+  background-color: #8a79df;
+  border-radius: 15px;
 }
 
 .aboutUs__container {
